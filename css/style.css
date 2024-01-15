@@ -465,7 +465,39 @@ header .navbar-toggler:hover {
     color: #000b00;
 }
 .experience .my-3{
-    color: blackgit add [tenfile]
-    git commit –m “lý do thay đổi”
-    git push ;
+    color: black;
+}
+footer{
+    background-color: #f7f9fc;
+}
+.footer__content{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.footer__content p{
+    font-size: 14px;
+}
+
+.footer__content a{
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 54px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+
+    transition: all .5s;
+}
+.footer__content a:hover{
+    color: #dc4f78;
 }

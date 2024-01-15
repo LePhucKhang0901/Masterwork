@@ -1,31 +1,22 @@
-(function(){
-    // Back to Top - by CodyHouse.co
-	var backTop = document.getElementsByClassName('js-cd-top')[0],
-		offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
-		offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		scrollDuration = 700,
-		scrolling = false;
+$(document).ready(function () {
+    var offset = 300,
+        offset_opacity = 1200,
+        scroll_top_duration = 700,
+        $back_to_top = $('.cd-top');
 
-	if( backTop ) {
-		//update back to top visibility on scrolling
-		window.addEventListener("scroll", function(event) {
-			if( !scrolling ) {
-				scrolling = true;
-				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
-			}
-		});
+    // Display or hide the button based on the scroll position
+    $(window).scroll(function () {
+        ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if ($(this).scrollTop() > offset_opacity) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+    });
 
-		//smooth scroll to top
-		backTop.addEventListener('click', function(event) {
-			event.preventDefault();
-			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
-		});
-	}
-
-	function checkBackToTop() {
-		var windowTop = window.scrollY || document.documentElement.scrollTop;
-		( windowTop > offset ) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
-		( windowTop > offsetOpacity ) && Util.addClass(backTop, 'cd-top--fade-out');
-		scrolling = false;
-	}
-})();
+    // Smooth scroll to top
+    $back_to_top.on('click', function (event) {
+        event.preventDefault();
+        $('body,html').animate({
+            scrollTop: 0,
+        }, scroll_top_duration);
+    });
+});
