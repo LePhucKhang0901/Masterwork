@@ -30,86 +30,95 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header class="container-xl">
-        <nav class="navbar navbar-expand-lg py-3">
-            <a class="navbar-brand" href="#">
-                <i class="far fa-handshake" style="color: #dc4f78;"></i>
-                <span>Masterwork</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPort"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body id="myBody">
+    <div class="container py-5">
 
-            <div class="collapse navbar-collapse" id="navbarPort">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            Pages
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Blog Post</a>
-                            <a class="dropdown-item" href="#">Landing Page</a>
-                            <a class="dropdown-item" href="#">404 page</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">
-                            <div class="box__demo">Schedule a demo</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">
-                            <i class="far fa-moon" style="font-size: 30px; color: black;"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Other sections and content go here -->
-    <div class="container__box">
-        <section class="projects mt-5">
-            <div class="container py-3">
-                <div class="row center-vertically">
-                    <div class="col-md-6">
-                        <div class="heading text-left content__left">
-                            <h2>We Execute Our Ideas From Start to Finish</h2>
-                            <p class="my-3">Building a beautiful interactive business for startups and innovative
-                                companies.
-                            </p>
+
+
+        <header class="container-xl">
+            <nav class="navbar navbar-expand-lg py-3">
+                <a class="navbar-brand" href="#">
+                    <i class="far fa-handshake" style="color: #dc4f78;"></i>
+                    <span>Masterwork</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPort"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarPort">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Blog Post</a>
+                                <a class="dropdown-item" href="#">Landing Page</a>
+                                <a class="dropdown-item" href="#">404 page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <div class="box__demo">Schedule a demo</div>
+                            </a>
+                        </li>
+                        <li>
+                            <div style="width: 18rem;" class="mx-auto py-3">
+                                <button class="btn" id="switchButton" title="Click to switch theme">
+                                    <i class="far fa-moon"></i>
+                                    <i class="far fa-sun"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Other sections and content go here -->
+        <div class="container__box">
+            <section class="projects mt-5">
+                <div class="container py-3">
+                    <div class="row center-vertically">
+                        <div class="col-md-6">
+                            <div class="heading text-left content__left">
+                                <h2>We Execute Our Ideas From Start to Finish</h2>
+                                <p class="my-3">Building a beautiful interactive business for startups and innovative
+                                    companies.
+                                </p>
+                            </div>
+                            <div class="read-more-box"
+                                style="color:#dc4f78; background-color: white; border: 1px solid #dc4f78;">
+                                <p>READ MORE</p>
+                            </div>
                         </div>
-                        <div class="read-more-box"
-                            style="color:#dc4f78; background-color: white; border: 1px solid #dc4f78;">
-                            <p>READ MORE</p>
+                        <div class="col-md-6">
+                            <img src="./img/main.png" alt="Image" class="img-fluid">
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="./img/main.png" alt="Image" class="img-fluid">
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="feature">
             <div class="container">
                 <div class="choose">
@@ -132,7 +141,8 @@
                                 <div class="feature__item">
                                     <img src="./img/choose-1.png" alt="">
                                     <h4>Interactive</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                        cubilia
                                         Curae;
                                         Nulla mollis
                                         dapibus nunc</p>
@@ -143,7 +153,8 @@
                                 <div class="feature__item">
                                     <img src="./img/choose-2.png" alt="">
                                     <h4>Business</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                        cubilia
                                         Curae;
                                         Nulla mollis
                                         dapibus nunc</p>
@@ -154,7 +165,8 @@
                                 <div class="feature__item">
                                     <img src="./img/choose-3.png" alt="">
                                     <h4>Inspiration</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                        cubilia
                                         Curae;
                                         Nulla mollis
                                         dapibus nunc</p>
@@ -234,50 +246,140 @@
             </div>
         </div>
     </section>
-    <section class="contact">
-        <div class="heading text-center mx-auto">
-            <h3>QUESTIONS AND ANSWERS</h3>
-            <h2>General FAQs</h2>
-            <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia
-                Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
-                mattis
-                quam.
-            </p>
-        </div>
-        <div class="contact__content">
-            <div class="contact__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461.434215143024!2d106.70438319993907!3d10.790296714991342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292591b672e5%3A0xb0efbe20cbbe911d!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggQ3liZXJTb2Z0IC0gVHLhu6UgU-G7nyBDaMOtbmg!5e0!3m2!1sen!2s!4v1701676384974!5m2!1sen!2s"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="projects py-5">
+        <div class="container py-5">
+            <div class="heading text-center mx-auto">
+                <h3>FEATURED CASES</h3>
+                <h2>Completed Projects</h2>
+                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+
+                    Project OneProject TwoProject Three</p>
             </div>
-            <div class="contact__form">
-                <class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        Pages
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Blog Post</a>
-                        <a class="dropdown-item" href="#">Landing Page</a>
-                        <a class="dropdown-item" href="#">404 page</a>
+
+            <div class="projects__content pt-3">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-tab1" data-toggle="pill" href="#pills-all" role="tab"
+                            aria-controls="pills-all" aria-selected="true">Project One</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-tab2" data-toggle="pill" href="#pills-illu" role="tab"
+                            aria-controls="pills-illu" aria-selected="false">Project Two</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-tab3" data-toggle="pill" href="#pills-photo" role="tab"
+                            aria-controls="pills-photo" aria-selected="false">Project Three</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="projectTabs">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-tab1">
+                        <div class="row">
+                            <div class="container py-3">
+                                <div class="row center-vertically">
+                                    <div class="col-md-6">
+                                        <div class="heading text-left content__left">
+                                            <h2>Why a visual identity system is more memorable</h2>
+                                            <p class="my-3">Lorem ipsum dolor sit, adipisicing elit repudiandae
+                                                perferendis dolores praesentium nulla quibusdam repellendus. consequatur
+                                                minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum
+                                                natus accusantium sit pariatur.
+
+
+                                            </p>
+                                        </div>
+                                        <div class="read-more-box"
+                                            style="color:#dc4f78; background-color: white; border: 1px solid #dc4f78;">
+                                            <p>READ MORE</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img style="border-radius: 4px" src="./img/project-1.jpg" alt="Image"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Blog Post</a>
-                        <a class="dropdown-item" href="#">Landing Page</a>
-                        <a class="dropdown-item" href="#">404 page</a>
+
+                    <div class="tab-pane fade" id="pills-illu" role="tabpanel" aria-labelledby="pills-tab2">
+                        <div class="row">
+                            <div class="container py-3">
+                                <div class="row center-vertically">
+                                    <div class="col-md-6">
+                                        <img style="border-radius: 4px" src="./img/project-2.jpg" alt="Image"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="heading text-left content__left">
+                                            <h2>Make website that looks Lorem, ipsum dolor.</h2>
+                                            <p class="my-3">Lorem ipsum dolor sit, adipisicing elit repudiandae
+                                                perferendis dolores praesentium nulla quibusdam repellendus. consequatur
+                                                minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum
+                                                natus accusantium sit pariatur.
+
+
+                                            </p>
+                                        </div>
+                                        <div class="read-more-box"
+                                            style="color:#dc4f78; background-color: white; border: 1px solid #dc4f78;">
+                                            <p>READ MORE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Blog Post</a>
-                        <a class="dropdown-item" href="#">Landing Page</a>
-                        <a class="dropdown-item" href="#">404 page</a>
+
+                    <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-tab3">
+                        <div class="row">
+                            <div class="container py-3">
+                                <div class="row center-vertically">
+                                    <div class="col-md-6">
+                                        <div class="heading text-left content__left">
+                                            <h2>Why a visual identity system is more memorable</h2>
+                                            <p class="my-3">Lorem ipsum dolor sit, adipisicing elit repudiandae
+                                                perferendis dolores praesentium nulla quibusdam repellendus. consequatur
+                                                minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum
+                                                natus accusantium sit pariatur.
+                                            </p>
+                                        </div>
+                                        <div class="read-more-box"
+                                            style="color:#dc4f78; background-color: white; border: 1px solid #dc4f78;">
+                                            <p>READ MORE</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img style="border-radius: 4px" src="./img/project-3.jpg" alt="Image"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </class=>
+                </div>
             </div>
         </div>
     </section>
+    <section class="experience">
+        <div class="experience-bg">
+            <div class="container py-5">
+                <div class="heading text-center mx-auto ">
+                    <h3 style="color: #dc4f72;">OUR CLIENTS TESTIMONIALS</h3>
+                    <h2 id="ex-h2">What People Say</h2>
+                    <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubilia
+                        Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
+                        mattis
+                        quam.
+                    </p>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
 
 
 
@@ -296,15 +398,21 @@
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/jquery.countup.js"></script>
     <script src="./js/util.js"></script>
     <script src="./js/backToTop.js"></script>
+    <script src="./js/darkMode.js"></script>
     <script>
         AOS.init();
     </script>
@@ -336,6 +444,7 @@
         // COUNT UP
         $('.counter').countUp();
     </script>
+
 
 </body>
 

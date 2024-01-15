@@ -60,7 +60,42 @@ header .navbar-brand i {
 header .navbar-brand i {
     color: #dc4f78;
 }
-
+#myBody {
+    background-color: white;
+  }
+  #switchButton {
+    background-color: white;
+    border: 1px solid black;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody {
+    background-color: black;
+  }
+  .dark #switchButton {
+    background-color: black;
+    border: 1px solid white;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .card {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+  
 #navbarPort .nav-item {
     margin: 0px 10px;
 }
@@ -377,34 +412,60 @@ header .navbar-toggler:hover {
     font-weight: bolder;
     font-size: 15px;
 }
-/* CONTACT */
-.contact{
-    padding: 100px 0;
+/* PROJECTS */
+
+.projects__item {
+    margin-top: 30px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.13);
+    border: none;
+    cursor: pointer;
 }
-.contact__content{
-    width: 70%;
-    margin: 30px auto 0;
-    display: flex;
-    align-items: center;
+
+.projects__item p {
+    color: #585858;
 }
-.contact__map{
-    width:60%;
+.projects__item .card-body {
+    border: 1px solid transparent;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
 }
-.contact__map iframe{
+.projects__item:hover .card-body {
+    border-color: #35a22c;
+    border-top-color: transparent;
+}
+.projects__item:hover h3 {
+    color: #35a22c;
+}
+
+.projects .nav-pills .nav-link {
+    color: #1a1d2d;
+    border: 1px solid #1a1d2d;
+    margin: 0 5px;
+}
+
+.projects .nav-pills .nav-link.active,
+.projects .nav-pills .show > .nav-link {
+    background-color: #35a22c;
+    color: #fff;
+    border-color: #35a22c;
+}
+
+.experience-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: rgba(252, 244, 244, 0.5); /* Adjust the alpha channel for the darkness level */
 }
-.contact__form{
-    width: 40%;
+#ex-h2{
+    font-size: 50px;
+    color: #000b00;
 }
-.contact__form form{
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-}
-.contact__form input, .contact__form textarea{
-    font-size: 15px;
-    padding: 1em;
-    border: 1px solid #888888;
-    border-radius: 2px;
-    margin-bottom: 30px;
+.experience .my-3{
+    color: blackgit add [tenfile]
+    git commit –m “lý do thay đổi”
+    git push ;
 }
